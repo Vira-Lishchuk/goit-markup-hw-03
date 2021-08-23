@@ -5,11 +5,38 @@
   --primary-white-color: #ffff;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
-  color: #757575;
+  color: #dbd1d1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
 }
 .list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -20,7 +47,13 @@ body {
   color: var(--primary-text-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1, 66;
@@ -48,6 +81,17 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+}
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
 }
 
 .site-nav .site-nav-link {
@@ -78,16 +122,24 @@ body {
 }
 
 /*-------------------Main--------- */
+.hero {
+  text-align: center;
+}
 .hero-title {
+  margin-top: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   color: #ffff;
   background-color: #2f303a;
 }
 
 .button {
+  border: 1px solid transparent;
+  text-align: center;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -100,7 +152,10 @@ body {
 }
 
 /* -------------Benefits--------- */
+
 .benefits-title-list {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -113,6 +168,11 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+/*----- Our work------- */
+.our-work {
+  margin-top: 0;
 }
 
 /* --------Our Team----------- */
