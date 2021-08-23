@@ -67,6 +67,27 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 
+.header .container {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.contact-nav {
+  display: flex;
+  align-items: center;
+}
+.site-logo {
+  margin-right: 93px;
+}
+
 .site-logo {
   color: #000000;
   font-family: Raleway;
@@ -82,17 +103,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
-.site-nav {
-  display: flex;
-}
-
-.site-nav .item {
-  margin-right: 50px;
-}
-
-.site-nav .item:last-child {
-  margin-right: 0;
-}
 
 .site-nav .site-nav-link {
   font-weight: 500;
@@ -101,15 +111,37 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+
 .site-nav .site-nav-link:hover,
 .site-nav .site-nav-link:focus {
   color: var(--accent-color);
 }
+
 .site-nav .site-nav-link.current {
   color: var(--accent-color);
 }
 
-.contact-nav-item {
+.site-nav .item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
+}
+.site-nav .item:last-child {
+  margin: 0;
+}
+.contact-nav .item + .item {
+  margin: 50px;
+}
+.contact-nav {
+  margin-left: auto;
+  display: flex;
+}
+.contact-nav .contact-nav-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.19;
@@ -126,6 +158,7 @@ body {
   text-align: center;
 }
 .hero-title {
+  text-align: center;
   margin-top: 0;
   font-weight: 900;
   font-size: 44px;
@@ -135,6 +168,7 @@ body {
 }
 
 .button {
+  align-items: center;
   border: 1px solid transparent;
   text-align: center;
   min-width: 200px;
@@ -152,7 +186,14 @@ body {
 }
 
 /* -------------Benefits--------- */
+.benefits-title {
+  display: flex;
+}
 
+.benefits-title .item {
+  margin-right: 30px;
+  width: 270px;
+}
 .benefits-title-list {
   margin-top: 0;
   margin-bottom: 10px;
@@ -174,6 +215,15 @@ body {
 .our-work {
   margin-top: 0;
 }
+.work-image {
+  display: flex;
+}
+.work-image .item {
+  margin-right: 30px;
+}
+.work-image .item:last-child {
+  margin-right: 0;
+}
 
 /* --------Our Team----------- */
 
@@ -181,12 +231,28 @@ body {
   background-color: #f5f4fa;
 }
 .team-title {
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
 }
 
+.title-eng {
+  text-align: center;
+}
+
+.team {
+  display: flex;
+}
+
+.team .item {
+  flex-basis: calc(100% / 4-30px);
+  margin-left: 30px;
+}
+.team .item:last-child {
+  margin-left: 0;
+}
 /* Footer */
 .footer {
   background-color: #2f303a;
