@@ -385,14 +385,15 @@ img {
   width: 370px;
   /* border: 1px solid #eeeeee; */
 }
-.portfolio-photo {
-  margin-bottom: 20px;
-}
+
 .portfolio-card {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .portfolio-title {
   margin-bottom: 8px;
