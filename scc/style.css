@@ -313,21 +313,15 @@ img {
   color: #ffffff;
 }
 
- {
-}
-.address-mail {
-  margin-bottom: 10px;
-}
-.address-mail .address-tel {
-  display: block;
+.address-link {
   font-size: 14px;
   line-height: 24px;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.address-mail .address-tel:hover,
-.address-mail .address-tel:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
